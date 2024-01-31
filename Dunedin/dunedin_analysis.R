@@ -25,7 +25,7 @@ all_clocks <- data.frame(DunedinClocks45, MoreClocks_2022Sep22)
 ### load imaging data
 load("/Users/ew198/Documents/individual_fns/behavior/Ethan_2022_0406.rdata")
 behavior <- Ethan_2022_0406
-behavior_all_clocks <- data.frame(behavior, dunedinpace = all_clocks$zrDunedinPACE45, horvath = all_clocks$zrHorvath45, hannum = all_clocks$zrHannum45, pheno = all_clocks$zrPheno45, grim = all_clocks$zrGrim45)
+behavior_all_clocks <- data.frame(snum=all_clocks$snum, dunedinpace = all_clocks$zrDunedinPACE45, horvath = all_clocks$zrHorvath45, hannum = all_clocks$zrHannum45, pheno = all_clocks$zrPheno45, grim = all_clocks$zrGrim45)
 
 gid_clocks <- all_clocks$snum[complete.cases(all_clocks)]
 
